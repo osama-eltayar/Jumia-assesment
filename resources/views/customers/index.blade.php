@@ -26,7 +26,7 @@
                         <select class="form-select" name="status" aria-label="Default select example">
                             <option value="" selected>All Status</option>
                             @foreach($statuses as $status)
-                                <option  {{request('status') == $status['value'] ? 'selected' : '' }}  value="{{$status['value']}}">{{$status['name']}}</option>
+                                <option  value="{{$status['value']}}">{{$status['name']}}</option>
                             @endforeach
                         </select>
                     </div>
